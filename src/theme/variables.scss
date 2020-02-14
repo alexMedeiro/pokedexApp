@@ -117,6 +117,26 @@
   --ion-color-bug-shade: #648c37;
   --ion-color-bug-tint: #80a952;
 
+  --ion-color-normal: #a4acaf;
+  --ion-color-normal-rgb: 164,172,175;
+  --ion-color-normal-contrast: #ffffff;
+  --ion-color-normal-contrast-rgb: 255,255,255;
+  --ion-color-normal-shade: #90979a;
+  --ion-color-normal-tint: #adb4b7;
+
+  --ion-color-psychic: #f366b9;
+  --ion-color-psychic-rgb: 243,102,185;
+  --ion-color-psychic-contrast: #ffffff;
+  --ion-color-psychic-contrast-rgb: 255,255,255;
+  --ion-color-psychic-shade: #d65aa3;
+  --ion-color-psychic-tint: #f475c0;
+
+  --ion-color-fighting: #D56723;
+  --ion-color-fighting-rgb: 213,103,35;
+  --ion-color-fighting-contrast: #ffffff;
+  --ion-color-fighting-contrast-rgb: 255,255,255;
+  --ion-color-fighting-shade: #bb5b1f;
+  --ion-color-fighting-tint: #d97639;
 
 }
 
@@ -175,4 +195,30 @@
   --ion-color-contrast-rgb: var(--ion-color-bug-contrast-rgb);
   --ion-color-shade: var(--ion-color-bug-shade);
   --ion-color-tint: var(--ion-color-bug-tint);
+}
+.ion-color-normal {
+  --ion-color-base: var(--ion-color-normal);
+  --ion-color-base-rgb: var(--ion-color-normal-rgb);
+  --ion-color-contrast: var(--ion-color-normal-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-normal-contrast-rgb);
+  --ion-color-shade: var(--ion-color-normal-shade);
+  --ion-color-tint: var(--ion-color-normal-tint);
+}
+
+.ion-color-psychic {
+  --ion-color-base: var(--ion-color-psychic);
+  --ion-color-base-rgb: var(--ion-color-psychic-rgb);
+  --ion-color-contrast: var(--ion-color-psychic-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-psychic-contrast-rgb);
+  --ion-color-shade: var(--ion-color-psychic-shade);
+  --ion-color-tint: var(--ion-color-psychic-tint);
+}
+
+.ion-color-fighting {
+  --ion-color-base: var(--ion-color-fighting);
+  --ion-color-base-rgb: var(--ion-color-fighting-rgb);
+  --ion-color-contrast: var(--ion-color-fighting-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-fighting-contrast-rgb);
+  --ion-color-shade: var(--ion-color-fighting-shade);
+  --ion-color-tint: var(--ion-color-fighting-tint);
 }
