@@ -8,10 +8,10 @@
 
 <ion-content color="dark">
 
-  <ion-searchbar placeholder="Buscar Pokemon" color="medium"></ion-searchbar>
+  <ion-searchbar placeholder="Buscar Pokemon" color="medium" (ionChange) = "buscarPokemon($event)"></ion-searchbar>
  
   <!--BULBASAUR -->
-    <ion-item-sliding *ngFor="let pokemon of listaPokemons">
+    <ion-item-sliding *ngFor="let pokemon of listaFiltrada">
       <ion-item color="dark">
 
         <ion-chip color="light" slot="start">
