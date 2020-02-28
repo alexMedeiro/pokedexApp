@@ -138,6 +138,29 @@
   --ion-color-fighting-shade: #bb5b1f;
   --ion-color-fighting-tint: #d97639;
 
+  
+    --ion-color-agua: #4592c4;
+    --ion-color-agua-rgb: 69,146,196;
+    --ion-color-agua-contrast: #ffffff;
+    --ion-color-agua-contrast-rgb: 255,255,255;
+    --ion-color-agua-shade: #3d80ac;
+    --ion-color-agua-tint: #589dca;
+
+    --ion-color-flying: #3dc7ef;
+    --ion-color-flying-rgb: 61,199,239;
+    --ion-color-flying-contrast: #ffffff;
+    --ion-color-flying-contrast-rgb: 255,255,255;
+    --ion-color-flying-shade: #36afd2;
+    --ion-color-flying-tint: #50cdf1;
+
+    --ion-color-dragao:linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+    --ion-color-dragao-rgb: 83,164,207;
+    --ion-color-dragao-contrast: #ffffff;
+    --ion-color-dragao-contrast-rgb: 255,255,255;
+    --ion-color-dragao-shade: #4990b6;
+    --ion-color-dragao-tint: #64add4;
+  
+
 }
 
 
@@ -221,4 +244,32 @@
   --ion-color-contrast-rgb: var(--ion-color-fighting-contrast-rgb);
   --ion-color-shade: var(--ion-color-fighting-shade);
   --ion-color-tint: var(--ion-color-fighting-tint);
+}
+
+
+  .ion-color-agua {
+    --ion-color-base: var(--ion-color-agua);
+    --ion-color-base-rgb: var(--ion-color-agua-rgb);
+    --ion-color-contrast: var(--ion-color-agua-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-agua-contrast-rgb);
+    --ion-color-shade: var(--ion-color-agua-shade);
+    --ion-color-tint: var(--ion-color-agua-tint);
+}
+
+.ion-color-flying {
+  --ion-color-base: var(--ion-color-flying);
+  --ion-color-base-rgb: var(--ion-color-flying-rgb);
+  --ion-color-contrast: var(--ion-color-flying-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-flying-contrast-rgb);
+  --ion-color-shade: var(--ion-color-flying-shade);
+  --ion-color-tint: var(--ion-color-flying-tint);
+}
+
+.ion-color-dragao {
+  --ion-color-base: var(--ion-color-dragao);
+  --ion-color-base-rgb: var(--ion-color-dragao-rgb);
+  --ion-color-contrast: var(--ion-color-dragao-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-dragao-contrast-rgb);
+  --ion-color-shade: var(--ion-color-dragao-shade);
+  --ion-color-tint: var(--ion-color-dragao-tint);
 }
