@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { DadosService } from '../servicos/dados.service';
 import { Route, Router } from '@angular/router';
 import { IPokemon } from '../interfaces/IPpokemon';
+import { PokemonApiService } from '../servico/pokemon-api.service';
 
 
 
@@ -89,9 +90,33 @@ export class HomePage {
 ];
 
 public listaFiltrada =[];
-  constructor( public dadosService : DadosService, public router :Router) {
+
+public listaPokemonApi;
+public totalPokemons;
+public offset = 0;
+public limit = 10 ;
+
+  constructor( 
+    public dadosService : DadosService,
+     public router :Router,
+     public pokeApi: PokemonApiService) {
+
     this.resetarLista();
 
+    this.buscarPokemons(this.offset, this.limit);
+
+  }
+
+  public buscarPokemons(offset, limit){
+    this.pokeApi.buscaPokemons(offset, limit
+      ).subscribe(dados=>{
+    console.log(dados);
+
+    //Pega somente o total de pokemons
+   this.totalPokemons = dados['count'];
+   //Pega somente a lista de pokemons 
+   this.listaPokemonApi = dados['results'];
+    })
   }
 
   abrirDadosPokemon(pokemon : IPokemon){
